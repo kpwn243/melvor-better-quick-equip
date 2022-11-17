@@ -1,0 +1,5 @@
+{
+  "namespace": "kpwn243_betterQuickEquip",
+  "version": "0.0.1",
+  "setup": "setup.mjs"
+}
