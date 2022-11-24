@@ -7,6 +7,7 @@ const crossSkillItemIds = [
   'melvorTotH:Superior_Cape_Of_Completion',
   'melvorD:Ancient_Ring_Of_Skills',
   'melvorD:Ancient_Ring_Of_Mastery',
+  'melvorD:Clue_Chasers_Insignia',
   'melvorF:Skillers_Hat',
   'melvorF:Skillers_Body',
   'melvorF:Skillers_Leggings',
