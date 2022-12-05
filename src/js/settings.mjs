@@ -66,7 +66,7 @@ export const createSettingsSection = (ctx, skill, itemIds) => {
           name: `${skillToShortName(skill)}-${itemDef.name}`,
           label: item.name,
           default: selected,
-          onChange: () => toggleCustomItem(skill, item)
+          onChange: () => toggleCustomItem(skill, itemDef.id)
         };
       }
       return null;
