@@ -12,6 +12,7 @@ const crossSkillItemIds = [
   {id: 'melvorF:Skillers_Leggings', name: '110'},
   {id: 'melvorF:Skillers_Boots', name: '111'},
   {id: 'melvorF:Clown_Hat', name: '112'},
+  {id: 'melvorD:Clue_Chasers_Insignia', name: '113'},
 ];
 
 export const registeredItemIds = new Map();
