@@ -18,7 +18,7 @@ import {
   townshipItemIds,
   woodcuttingItemIds
 } from "./constants.js";
-import { toggleCustomItem } from "./utils/utils.js";
+import {skillToShortName, toggleCustomItem} from "./utils/utils.js";
 
 export const createAllSettingsSections = (ctx) => {
   createSettingsSection(ctx, game.woodcutting, woodcuttingItemIds);
@@ -63,7 +63,7 @@ export const createSettingsSection = (ctx, skill, itemIds) => {
         registeredItemIds.get(skill).add(item);
         return {
           type: "switch",
-          name: itemDef.name,
+          name: `${skillToShortName(skill)}-${itemDef.name}`,
           label: item.name,
           default: selected,
           onChange: () => toggleCustomItem(skill, item)
