@@ -42,31 +42,31 @@ export const createAllSettingsSections = (ctx) => {
 
 export const createSettingsSection = (ctx, skill, itemIds) => {
 
-  const skillName = skill.name;
   const items = itemIds
-    .map((itemId) => {
-      const item = game.items.equipment.getObjectByID(itemId);
+    .map((itemDef) => {
+      const item = game.items.equipment.getObjectByID(itemDef.id);
       if (typeof item === "undefined") {
         // Item not found so most likely does not have TotH
         return null;
       }
       const hasFoundItem = game.stats.itemFindCount(item);
       const hasItemInBank = game.bank.hasItem(item);
-      if (hasFoundItem > 0 && hasItemInBank) {
+      const hasItemInEquipmentSlot = game.combat.player.checkEquipmentSetsForItem(item);
+      if (hasFoundItem > 0 && (hasItemInBank || hasItemInEquipmentSlot)) {
         const selected = game.minibar.isCustomItemSet(skill, item);
 
         // return null if item already registered
-        if (registeredItemIds.get(skill).has(itemId)) {
+        if (registeredItemIds.get(skill).has(item)) {
           return null;
         }
 
-        registeredItemIds.get(skill).add(itemId);
+        registeredItemIds.get(skill).add(item);
         return {
           type: "switch",
-          name: `${skillName}-${itemId}`,
+          name: itemDef.name,
           label: item.name,
           default: selected,
-          onChange: () => toggleCustomItem(skill, itemId)
+          onChange: () => toggleCustomItem(skill, item)
         };
       }
       return null;
