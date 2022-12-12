@@ -57,6 +57,7 @@ export const firemakingItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Burning_Mans_Body', name: '39'},
   {id: 'melvorF:Burning_Mans_Leggings', name: '310'},
   {id: 'melvorF:Burning_Mans_Boots', name: '311'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '312'},
 ]);
 
 export const cookingItemIds = crossSkillItemIds.concat([
@@ -67,6 +68,7 @@ export const cookingItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Cooking_Apron', name: '45'},
   {id: 'melvorTotH:Mortar_and_Pestle', name: '46'},
   {id: 'melvorF:Chefs_Spoon', name: '47'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '48'},
 ]);
 
 export const miningItemIds = crossSkillItemIds.concat([
@@ -87,6 +89,7 @@ export const smithingItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Blacksmiths_Body', name: '65'},
   {id: 'melvorF:Blacksmiths_Leggings', name: '66'},
   {id: 'melvorF:Blacksmiths_Boots', name: '67'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '68'},
 ]);
 
 export const thievingItemIds = crossSkillItemIds.concat([
@@ -139,6 +142,7 @@ export const fletchingItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Fletchers_Body', name: '95'},
   {id: 'melvorF:Fletchers_Leggings', name: '96'},
   {id: 'melvorF:Fletchers_Boots', name: '97'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '98'},
 ]);
 
 export const craftingItemIds = crossSkillItemIds.concat([
@@ -149,6 +153,7 @@ export const craftingItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Crafters_Body', name: '105'},
   {id: 'melvorF:Crafters_Leggings', name: '106'},
   {id: 'melvorF:Crafters_Boots', name: '107'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '108'},
 ]);
 
 export const runecraftingItemIds = crossSkillItemIds.concat([
@@ -160,6 +165,7 @@ export const runecraftingItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Runecrafter_Body', name: '116'},
   {id: 'melvorF:Runecrafter_Leggings', name: '117'},
   {id: 'melvorF:Runecrafter_Boots', name: '118'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '119'},
 ]);
 
 export const herbloreItemIds = crossSkillItemIds.concat([
@@ -171,6 +177,7 @@ export const herbloreItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Potion_Makers_Body', name: '126'},
   {id: 'melvorF:Potion_Makers_Leggings', name: '127'},
   {id: 'melvorF:Potion_Makers_Boots', name: '128'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '129'},
 ]);
 
 export const agilityItemIds = crossSkillItemIds.concat([
@@ -193,6 +200,7 @@ export const summoningItemIds = crossSkillItemIds.concat([
   {id: 'melvorF:Necromancer_Robes', name: '146'},
   {id: 'melvorF:Necromancer_Bottoms', name: '147'},
   {id: 'melvorF:Necromancer_Boots', name: '148'},
+  {id: 'melvorD:Crown_of_Rhaelyx', name: '149'},
 ]);
 
 export const astrologyItemIds = crossSkillItemIds.concat([
