@@ -50,9 +50,7 @@ export const createSettingsSection = (ctx, skill, itemIds) => {
         return null;
       }
       const hasFoundItem = game.stats.itemFindCount(item);
-      const hasItemInBank = game.bank.hasItem(item);
-      const hasItemInEquipmentSlot = game.combat.player.checkEquipmentSetsForItem(item);
-      if (hasFoundItem > 0 && (hasItemInBank || hasItemInEquipmentSlot)) {
+      if (hasFoundItem > 0) {
         const selected = game.minibar.isCustomItemSet(skill, item);
 
         // return null if item already registered

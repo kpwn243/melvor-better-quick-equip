@@ -1,11 +1,9 @@
 import { registeredItemIds, relevantItems } from "./constants.js";
 import { createAllSettingsSections } from "./settings.mjs";
-import { resetAllSkillCustomItems } from "./utils/utils.js";
 
 export async function setup (ctx) {
 
   ctx.onCharacterLoaded(async () => {
-    resetAllSkillCustomItems();
     registeredItemIds.set(game.woodcutting, new Set());
     registeredItemIds.set(game.fishing, new Set());
     registeredItemIds.set(game.firemaking, new Set());
